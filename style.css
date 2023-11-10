@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*check the use*/
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /*disabling scrolling - cannot see the rest of the images that did not fit on the screen*/
+}
+
+#mountain1{
+    width: 100%;
+}
+
+#mountain2{
+    width: 100%;
+}
+
+#mountain3{
+    width: 100%;
+}
+
+#key{
+    width: 100%;
+}
+
+.first-img-div{
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    width: 117%;
+    z-index: 19;
+}
+
+.second-img-div{
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 86%;
+    z-index: 18;
+}
+
+.third-img-div{
+    position: absolute;
+    bottom: 150px;
+    right: 0;
+    width: 100%;
+    z-index: 17;
+}
+
+.sky-img-div{
+    position: absolute;
+    bottom: -200px;
+    right: 0;
+    width: 165%;
+}
+
+#main-header{
+    position: absolute;
+    z-index: 30;
+    line-height: 4rem;
+    top: calc(50% - 2rem);
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+/*considering that we will be implementing changes to the*/
+/*..container's measurements, we apply the color on the entire section*/
+/*..so it covers the entire background, instead of only the container's part*/
+section{
+    background-color: #151515;
+    position: relative; /*without it, the shadow effect will not show*/
+    /*width: 100%;*/
+}
+
+.shadow{
+    position: absolute;
+    bottom: 100%;
+    height: 300px;
+    width: 100%;
+    left: 0;
+    z-index: 20;
+    background: linear-gradient(to top, #151515, transparent);
+
+}
+
+.container{
+    padding: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+}
+
+
+.content{
+    color: #fff;
+    margin: 20px;
+}
+
+.sub-title{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+}
+
+.sub-title::after{
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 30%;
+    height: 3px;
+    background-color: #fff;
+}
+
+#regular-img{
+    width: 100%;
+    margin-top: 50px;
+}
